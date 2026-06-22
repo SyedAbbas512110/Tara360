@@ -43,6 +43,12 @@ Terraform will perform the following actions:
 
       [32m+[0m[0m mixed_instances_policy (known after apply)
 
+      [32m+[0m[0m tag {
+          [32m+[0m[0m key                 = "Project"
+          [32m+[0m[0m propagate_at_launch = true
+          [32m+[0m[0m value               = "Tara360"
+        }
+
       [32m+[0m[0m traffic_source (known after apply)
     }
 
@@ -55,7 +61,8 @@ Terraform will perform the following actions:
           [32m+[0m[0m "Name" = "Tara360-igw"
         }
       [32m+[0m[0m tags_all = {
-          [32m+[0m[0m "Name" = "Tara360-igw"
+          [32m+[0m[0m "Name"    = "Tara360-igw"
+          [32m+[0m[0m "Project" = "Tara360"
         }
       [32m+[0m[0m vpc_id   = (known after apply)
     }
@@ -70,7 +77,9 @@ Terraform will perform the following actions:
       [32m+[0m[0m latest_version  = (known after apply)
       [32m+[0m[0m name            = (known after apply)
       [32m+[0m[0m name_prefix     = "Tara360-lt-"
-      [32m+[0m[0m tags_all        = (known after apply)
+      [32m+[0m[0m tags_all        = {
+          [32m+[0m[0m "Project" = "Tara360"
+        }
       [32m+[0m[0m user_data       = "IyEvYmluL2Jhc2gNCnN1ZG8gYXB0LWdldCB1cGRhdGUgLXkNCnN1ZG8gYXB0LWdldCBpbnN0YWxsIGRvY2tlci5pbyAteQ0Kc3VkbyBzeXN0ZW1jdGwgc3RhcnQgZG9ja2VyDQpzdWRvIHN5c3RlbWN0bCBlbmFibGUgZG9ja2VyDQpzdWRvIGRvY2tlciBydW4gLWQgLXAgODA6ODAgbmdpbng6bGF0ZXN0DQo="
 
       [32m+[0m[0m metadata_options (known after apply)
@@ -106,7 +115,9 @@ Terraform will perform the following actions:
       [32m+[0m[0m preserve_host_header                                         = false
       [32m+[0m[0m security_groups                                              = (known after apply)
       [32m+[0m[0m subnets                                                      = (known after apply)
-      [32m+[0m[0m tags_all                                                     = (known after apply)
+      [32m+[0m[0m tags_all                                                     = {
+          [32m+[0m[0m "Project" = "Tara360"
+        }
       [32m+[0m[0m vpc_id                                                       = (known after apply)
       [32m+[0m[0m xff_header_processing_mode                                   = "append"
       [32m+[0m[0m zone_id                                                      = (known after apply)
@@ -141,7 +152,9 @@ Terraform will perform the following actions:
       [32m+[0m[0m routing_http_response_x_content_type_options_header_value             = (known after apply)
       [32m+[0m[0m routing_http_response_x_frame_options_header_value                    = (known after apply)
       [32m+[0m[0m ssl_policy                                                            = (known after apply)
-      [32m+[0m[0m tags_all                                                              = (known after apply)
+      [32m+[0m[0m tags_all                                                              = {
+          [32m+[0m[0m "Project" = "Tara360"
+        }
       [32m+[0m[0m tcp_idle_timeout_seconds                                              = (known after apply)
 
       [32m+[0m[0m default_action {
@@ -174,7 +187,9 @@ Terraform will perform the following actions:
       [32m+[0m[0m protocol_version                   = (known after apply)
       [32m+[0m[0m proxy_protocol_v2                  = false
       [32m+[0m[0m slow_start                         = 0
-      [32m+[0m[0m tags_all                           = (known after apply)
+      [32m+[0m[0m tags_all                           = {
+          [32m+[0m[0m "Project" = "Tara360"
+        }
       [32m+[0m[0m target_type                        = "instance"
       [32m+[0m[0m vpc_id                             = (known after apply)
 
@@ -212,7 +227,9 @@ Terraform will perform the following actions:
                 [90m# (11 unchanged attributes hidden)[0m[0m
             },
         ]
-      [32m+[0m[0m tags_all         = (known after apply)
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Project" = "Tara360"
+        }
       [32m+[0m[0m vpc_id           = (known after apply)
     }
 
@@ -269,7 +286,9 @@ Terraform will perform the following actions:
       [32m+[0m[0m name_prefix            = (known after apply)
       [32m+[0m[0m owner_id               = (known after apply)
       [32m+[0m[0m revoke_rules_on_delete = false
-      [32m+[0m[0m tags_all               = (known after apply)
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "Project" = "Tara360"
+        }
       [32m+[0m[0m vpc_id                 = (known after apply)
     }
 
@@ -310,7 +329,9 @@ Terraform will perform the following actions:
       [32m+[0m[0m name_prefix            = (known after apply)
       [32m+[0m[0m owner_id               = (known after apply)
       [32m+[0m[0m revoke_rules_on_delete = false
-      [32m+[0m[0m tags_all               = (known after apply)
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "Project" = "Tara360"
+        }
       [32m+[0m[0m vpc_id                 = (known after apply)
     }
 
@@ -334,7 +355,8 @@ Terraform will perform the following actions:
           [32m+[0m[0m "Name" = "Tara360-public-1"
         }
       [32m+[0m[0m tags_all                                       = {
-          [32m+[0m[0m "Name" = "Tara360-public-1"
+          [32m+[0m[0m "Name"    = "Tara360-public-1"
+          [32m+[0m[0m "Project" = "Tara360"
         }
       [32m+[0m[0m vpc_id                                         = (known after apply)
     }
@@ -359,7 +381,8 @@ Terraform will perform the following actions:
           [32m+[0m[0m "Name" = "Tara360-public-2"
         }
       [32m+[0m[0m tags_all                                       = {
-          [32m+[0m[0m "Name" = "Tara360-public-2"
+          [32m+[0m[0m "Name"    = "Tara360-public-2"
+          [32m+[0m[0m "Project" = "Tara360"
         }
       [32m+[0m[0m vpc_id                                         = (known after apply)
     }
@@ -386,7 +409,8 @@ Terraform will perform the following actions:
           [32m+[0m[0m "Name" = "Tara360-vpc"
         }
       [32m+[0m[0m tags_all                             = {
-          [32m+[0m[0m "Name" = "Tara360-vpc"
+          [32m+[0m[0m "Name"    = "Tara360-vpc"
+          [32m+[0m[0m "Project" = "Tara360"
         }
     }
 
